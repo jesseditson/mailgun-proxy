@@ -1,0 +1,13 @@
+{
+  "env": {
+    "NODE_ENV": "production",
+    "MAILGUN_API_KEY": "@mailgun-key"
+  },
+  "files": [
+    "index.js",
+    "config.js",
+    "proxy.js",
+    "now.json",
+    "packahe.json"
+  ]
+}

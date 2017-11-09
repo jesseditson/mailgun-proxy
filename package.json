@@ -1,0 +1,35 @@
+{
+  "name": "mailgun-proxy",
+  "version": "1.0.0",
+  "description": "A server for proxying requests to mailgun",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "test": "MAILGUN_API_KEY=test ava --fail-fast --verbose",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseditson/mailgun-proxy.git"
+  },
+  "keywords": [
+    "mailgun",
+    "proxy"
+  ],
+  "author": "jesse.ditson@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesseditson/mailgun-proxy/issues"
+  },
+  "homepage": "https://github.com/jesseditson/mailgun-proxy#readme",
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "micro": "^9.0.1",
+    "micro-cors": "github:jesseditson/micro-cors#multiple_origins"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "mailgun.js": "^2.0.1",
+    "test-listen": "^1.0.2"
+  }
+}
